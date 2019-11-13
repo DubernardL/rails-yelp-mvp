@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="title"><%= @restaurant.name %></h1>
+  <p class="align-content"><%= @restaurant.address %></p>
+  <p class="align-content"><%= @restaurant.category %></p>
+  <p class="align-content"><%= @restaurant.phone_number %></p>
+
+  <%= link_to "back to list", restaurants_path, class:"btn btn-primary" %>
+  <%= link_to "Add review", new_restaurant_review_path(@restaurant), class:"btn btn-primary" %>
+</div>
